@@ -1,17 +1,17 @@
 [
   {"nombre":"Landing de Venta" ,
-  "imagen": "./img/Restaurant.png" ,
+  "imagen": "./img/proy1.png" ,
   "descripcion": "Página landing para un negocio de medicina complementaria"},
   {"nombre":"Aplicación CRUD" ,
-    "imagen": "" ,
+    "imagen": "./img/proy2.png" ,
     "descripcion": " Se desarrolló una aplicación con operaciones CRUD para una pagina de citas"},
     {"nombre":"Tablero de Datos-Dashboard-" ,
-      "imagen": "" ,
+      "imagen": "./img/proy3.png" ,
       "descripcion": " Aplicación que consume una API y muestra los datos graficados en un tablero"},
       {"nombre":"Restaurant App" ,
-        "imagen": "" ,
+        "imagen": "./img/proy4.png" ,
         "descripcion": " Aplicación de un restaurante con secciones de reservacion, contacto, etc"},
         {"nombre":"Aplicacion de comercio electronico" ,
-          "imagen": "" ,
+          "imagen": "./img/proy5.png" ,
           "descripcion": "Aplicación eCommerce, compuesto por catálogo de productos, carrito de compras, pasarela de pago, autenticación y registro de usuarios"}
   ]
