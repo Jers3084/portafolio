@@ -65,8 +65,8 @@ export const About = () => {
         <ul className={styles.ul_dos}>
           <li className={styles.item_lista2}>
             Elaboración de Paginas Web dinámicas y responsivas.
-          </li>
-          <li className={styles.item_lista2}>Sistemas CRUD</li>
+           (Html, Css, JavaScript, React)</li>
+          <li className={styles.item_lista2}>Sistemas CRUD. (Arrays, LocalStorage )</li>
           <li className={styles.item_lista2}>Tienda en línea (e-commerce).</li>
           <li className={styles.item_lista2}>Sistemas Frontend y Backend.</li>
           <li className={styles.item_lista2}>

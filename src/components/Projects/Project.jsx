@@ -14,7 +14,7 @@ export const Project = () => {
                 <img
                   src={x.imagen}
                   alt=""
-                  style={{ with: "150px", height: "200px" }}
+                  style={{ with: "130px", height: "200px" }}
                 />
               </div>
               <div className={styles.title_card}>

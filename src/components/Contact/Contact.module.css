@@ -97,6 +97,16 @@
   padding-bottom: 25px;
   font-size: small;
   border-top: darkblue 1px solid;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 @media screen and (max-width: 768px) {

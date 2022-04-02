@@ -1,34 +1,32 @@
-import React, { useState } from 'react'
-import styles from './Contact.module.css'
-
+import React, { useState } from "react";
+import styles from "./Contact.module.css";
+import github from "./img/github_icon.png";
+import linkedin from "./img/linked_icon.png";
 
 export const Contact = () => {
-  const [nombre, setNombre] = useState('')
-  const [email, setEmail] = useState('')
-  const [comentario, setComentario] = useState('')
-
+  const [nombre, setNombre] = useState("");
+  const [email, setEmail] = useState("");
+  const [comentario, setComentario] = useState("");
 
   const handleSubmitr = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
-    enviarRegistro()
-    setNombre('')
-    setEmail('')
-    setComentario('')
-    alert('Registro Enviado')
-  }
+    enviarRegistro();
+    setNombre("");
+    setEmail("");
+    setComentario("");
+    alert("Registro Enviado");
+  };
 
   const enviarRegistro = () => {
-    
     const msg = {
-      to: 'jers1968@gmail.com', // Change to your recipient
-      from: 'jers@infinitummail.com', // Change to your verified sender
-      subject: 'Solicitud de Informacion',
-      text: 'Requiero informacion de los servicios de Vida Natura',
-      html: 'Requiero informacion de los servicios de Vida Natura, Mi correo es: ',
-    }
-    
-  }
+      to: email,
+      from: "jers@infinitummail.com",
+      subject: "Mensaje de pagina Portafolio",
+      text: comentario,
+      html: comentario,
+    };
+  };
 
   return (
     <div className={styles.contenedor}>
@@ -45,7 +43,7 @@ export const Contact = () => {
             value={nombre}
             placeholder="Nombre"
             onChange={(e) => {
-              setNombre(e.target.value)
+              setNombre(e.target.value);
             }}
           />
         </div>
@@ -62,27 +60,27 @@ export const Contact = () => {
             placeholder="Correo electronico"
             required
             onChange={(e) => {
-              setEmail(e.target.value)
+              setEmail(e.target.value);
             }}
           />
         </div>
 
-        
         <div className={styles.fullentry}>
           <label
             htmlFor="validationCustomUsername"
-            className={styles.formlabel}
-          >Mensaje</label>
+            className={styles.formlabel}>
+            Mensaje
+          </label>
           <textarea
-              className={styles.formcontrol}
-              id="Comentario"
-              rows={3}
-              Value={comentario}
-              required
-              onChange={(e) => {
-                setComentario(e.target.value)
-              }}
-            />
+            className={styles.formcontrol}
+            id="Comentario"
+            rows={3}
+            Value={comentario}
+            required
+            onChange={(e) => {
+              setComentario(e.target.value);
+            }}
+          />
         </div>
 
         <div className={styles.contenBoton}>
@@ -92,7 +90,19 @@ export const Contact = () => {
         </div>
       </form>
       <div className={styles.pie_de_pagina}>
+        <a
+          href="https://github.com/Jers3084?tab=repositories"
+          target="_blank"
+          rel="noopener noreferrer">
+          <img src={github} alt="" className={styles.img} />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/jesus-eugenio-ricardez-de-los-santos-494b0810a"
+          target="_blank"
+          rel="noopener noreferrer">
+          <img src={linkedin} alt="" className={styles.img} />
+        </a>
       </div>
     </div>
-  )
-}
+  );
+};

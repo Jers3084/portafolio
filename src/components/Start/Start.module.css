@@ -1,20 +1,21 @@
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .contenedor {
+  height: 933px;
   padding-top: 30px;
   text-align: center;
   color: darkblue;
+  background-image: url("./img/fondo.jpg");
 }
 
 .titulo {
   padding-top: 60px;
   padding-bottom: 20px;
   font-size: 3rem;
-
 }
 
 .fotostart {
@@ -29,10 +30,55 @@ box-sizing: border-box;
 }
 
 .parrafo_dos {
-width:95%;
-padding: 10px;
-font-size: 2rem;
-text-align: justify;
-margin-left: auto;
-margin-right: auto;
+  width: 95%;
+  padding: 10px;
+  font-size: 2rem;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 860px) {
+  .contenedor {
+    width: 100%vw;
+    height: 1600px;
+    padding-top: 30px;
+    text-align: center;
+    color: darkblue;
+    background-image: url("./img/fondo.jpg");
+  }
+
+  .titulo {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    font-size: 3rem;
+  }
+
+  .fotostart {
+    border: blue 1px solid;
+    border-radius: 10px;
+  }
+
+  .parrafo_uno {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 2rem;
+  }
+
+  .parrafo_dos {
+    width: 95%;
+    padding: 10px;
+    font-size: 2rem;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 992px) {
 }
