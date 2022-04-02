@@ -5,13 +5,15 @@ box-sizing: border-box;
 }
 
 .contenedor {
+  padding-top: 30px;
   text-align: center;
   color: darkblue;
 }
 
 .titulo {
-  padding-top: 80px;
-  padding-bottom: 10px;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  font-size: 3rem;
 
 }
 
@@ -21,12 +23,15 @@ box-sizing: border-box;
 }
 
 .parrafo_uno {
-padding: 3px;
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 2rem;
 }
 
 .parrafo_dos {
-width:90%;
+width:95%;
 padding: 10px;
+font-size: 2rem;
 text-align: justify;
 margin-left: auto;
 margin-right: auto;

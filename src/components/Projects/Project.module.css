@@ -14,17 +14,18 @@
 }
 .card {
   width: 25%;
-  height: 210px;
+  height: 365px;
   color: darkblue;
   border: blue 1px solid;
   border-radius: 5%;
   margin: 20px;
+  padding-top: 10px;
   padding-left: 20px;
 }
 
 .image_card {
   width: 25%;
-  margin-bottom: 10px;
+  border-radius: 3px;
 }
 
 .title_card {

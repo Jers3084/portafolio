@@ -12,8 +12,7 @@ export const About = () => {
         <div className={styles.parrafo_uno}>
           <p className={styles.subparrafo1}>
             Mi nombre es <strong>Jesús Eugenio Ricardez de los Santos</strong> y
-            soy
-            <strong>“Desarrollador Web Fullstack”</strong>
+            soy <strong>“Desarrollador Web Fullstack”</strong>
           </p>
           <p className={styles.titulo2}>Mi objetivo profesional</p>
           <p className={styles.parrafo2}>
@@ -60,17 +59,17 @@ export const About = () => {
           VISUAL STUDIO CODE, GOOGLE CLOUD, HEROKU, VERCEL,WINDOWS, LINUX.
           SCRUM, KANBAN.
         </p>
-        <p className={styles.titulo4}>Bases de Datos</p>
+        <p className={styles.titulo5}>Bases de Datos</p>
         <p className={styles.parrafo3}>MONGO DB, FIRE BASE, ROBO 3T</p>
-        <p className={styles.titulo4}>Experiencia:</p>
-        <ul className={styles.ul_uno}>
-          <li className={styles.item_lista1}>
+        <p className={styles.titulo5}>Experiencia:</p>
+        <ul className={styles.ul_dos}>
+          <li className={styles.item_lista2}>
             Elaboración de Paginas Web dinámicas y responsivas.
           </li>
-          <li className={styles.item_lista1}>Sistemas CRUD</li>
-          <li className={styles.item_lista1}>Tienda en línea (e-commerce).</li>
-          <li className={styles.item_lista1}>Sistemas Frontend y Backend.</li>
-          <li className={styles.item_lista1}>
+          <li className={styles.item_lista2}>Sistemas CRUD</li>
+          <li className={styles.item_lista2}>Tienda en línea (e-commerce).</li>
+          <li className={styles.item_lista2}>Sistemas Frontend y Backend.</li>
+          <li className={styles.item_lista2}>
             Elaboración de sistemas de consumo y elaboración de API´s, Tableros
             de Datos (Dashboard).
           </li>

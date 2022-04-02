@@ -100,7 +100,6 @@ export const Contact = () => {
         </div>
       </form>
       <div className={styles.pie_de_pagina}>
-      <hr className={styles.hr}/>
       </div>
     </div>
   )
