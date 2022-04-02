@@ -7,11 +7,10 @@ export const About = () => {
     <div className={styles.contenedor}>
       <div className={styles.contenedor_uno}>
         <div className={styles.fotografia}>
-          <img src={foto} alt="" />
+          <img src={foto} alt="" className={styles.img}/>
         </div>
         <div className={styles.parrafo_uno}>
-          <p className={styles.titulo1}>Mi Portafolio</p>
-          <p className={styles.parrafo1}>
+          <p className={styles.subparrafo1}>
             Mi nombre es <strong>Jesús Eugenio Ricardez de los Santos</strong> y
             soy
             <strong>“Desarrollador Web Fullstack”</strong>
@@ -21,7 +20,7 @@ export const About = () => {
             Apoyar profesional y tecnológicamente a empresas grandes, medianas y
             pequeñas, así como a emprendedores y profesionales en el
             cumplimiento de su plan de negocios que generen valor y ser motor
-            del desarrollo de las empresas y países
+            del desarrollo de las empresas.
           </p>
         </div>
       </div>
@@ -44,6 +43,9 @@ export const About = () => {
           <li className={styles.item_lista1}>
             Capacitación continua en Administracion de Proyectos y Sistemas de
             Telecomunicaciones y Tecnologías de la Información.
+          </li>
+          <li className={styles.item_lista1}>
+            BootCamp Desarrollo Web Full Stack.
           </li>
         </ul>
       </div>
@@ -77,7 +79,7 @@ export const About = () => {
       <div className={styles.contenedor_cuatro}>
         <div className={styles.columna_uno}>
           <p className={styles.titulo5}>Aptitudes</p>
-          <hr />
+          <hr className={styles.hr}/>
           <ul className={styles.ul_dos}>
             <li className={styles.item_lista2}>Honestidad</li>
             <li className={styles.item_lista2}>Lealtad</li>
@@ -92,30 +94,26 @@ export const About = () => {
             <li className={styles.item_lista2}>Adaptabilidad</li>
           </ul>
         </div>
+        <div className={styles.columna_media}>
+          <p className={styles.titulo5}>y</p>
+        </div>
         <div className={styles.columna_dos}>
           <p className={styles.titulo5}>Habilidades</p>
-          <hr />
+          <hr className={styles.hr}/>
           <ul className={styles.ul_dos}>
-            <li className={styles.item_lista2}>Desarrollo de Proyectos</li>
-            <li className={styles.item_lista2}>
-            Desarrollo de Ingenierías.
-            </li>
-            <li className={styles.item_lista2}>Diseño y ejecución de programas</li>
-            <li className={styles.item_lista2}>Administracion de Sistemas</li>
-            <li className={styles.item_lista2}>Desarrollo y prestación de servicios</li>
-            <li className={styles.item_lista2}>Gestión eficiente de Recursos Humanos y Materiales</li>
+            <li className={styles.item_lista2}>Entendimiento de planes estratégicos</li>
             <li className={styles.item_lista2}>Trabajo en Equipo</li>
             <li className={styles.item_lista2}>Toma de decisiones</li>
             <li className={styles.item_lista2}>Capacidad de Análisis y Síntesis</li>
             <li className={styles.item_lista2}>Resolución de problemas</li>
             <li className={styles.item_lista2}>Rápido aprendizaje </li>
             <li className={styles.item_lista2}>Analítico</li>
-            <li className={styles.item_lista2}> Entendimiento de planes estratégicos</li>
+            <li className={styles.item_lista2}> Desarrollo de Proyectos e Ingenierias</li>
           </ul>
         </div>
       </div>
       <div className={styles.pie_de_pagina}>
-        <hr/>
+      <hr className={styles.hr}/>
       </div>
     </div>
   )

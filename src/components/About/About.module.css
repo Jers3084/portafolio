@@ -24,8 +24,31 @@
   flex: 30%;
 }
 
+.img {
+  border-radius: 5px;
+  border: darkblue 0.25px solid;
+}
+
 .parrafo_uno {
   flex: 70%;
+  border-top: darkblue 1px solid;
+  border-bottom: darkblue 1px solid;
+}
+
+.titulo1 {
+  font-size: 2rem;
+  text-align: left;
+  font-weight: bold;
+  padding-left: 270px;
+  padding-top: 10px;
+}
+
+.subparrafo1 {
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-bottom: 40px;
+  text-align: left;
+  font-size: 1.3rem;
 }
 
 .contenedor_dos {
@@ -34,20 +57,8 @@
   height: 200px;
   padding-top: 20px;
   padding-left: 30px;
+  padding-right: 30px;
   color: darkblue;
-}
-
-.titulo1 {
-  font-size: 2rem;
-  text-align: left;
-  font-weight: bold;
-  padding-left: 270px;
-}
-
-.parrafo1 {
-  padding: 20px;
-  text-align: left;
-  font-size: 1.3rem;
 }
 
 .titulo2 {
@@ -69,6 +80,7 @@
   text-align: left;
   font-weight: bold;
   padding-left: 30px;
+  padding-right: 30px;
   padding-bottom: 10px;
 }
 
@@ -88,6 +100,7 @@
   height: 90vh;
   padding-top: 30px;
   padding-left: 30px;
+  padding-right: 30px;
   color: darkblue;
 }
 
@@ -109,46 +122,50 @@
 }
 
 .contenedor_cuatro {
-  margin-top: 150px;
+  margin-top: 140px;
   width: 100%;
-  height: 400px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  height: 350px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+  grid-template-rows: repeat(13, 1fr);
+  grid-gap: 20px;
   color: darkblue;
   padding-bottom: 25px;
 }
 
 .columna_uno {
-  flex: 50%;
+  grid-column: 2/3;
   text-align: center;
-
 }
 
 .columna_dos {
-  flex: 50%;
+  grid-column: 4/5;
+  text-align: left;
+}
+
+.columna_media {
+  grid-column: 3/4;
   text-align: center;
-  
 }
 
 .titulo5 {
   font-size: 2rem;
-  text-align: center;
+  text-align: left;
   font-weight: bold;
+  padding-left: 40px;
   padding-bottom: 10px;
 }
 
 .ul_dos {
   text-decoration: none;
-  text-align: center;
   font-size: 1.2rem;
   padding-left: 50px;
-  list-style-type:none;
+  list-style-type: none;
 }
 
 .item_lista2 {
   padding: 5px 5px;
-  text-align: center;
+  text-align: left;
   list-style: none;
   text-decoration: none;
 }
@@ -160,4 +177,9 @@
   color: darkblue;
   padding-bottom: 25px;
   font-size: small;
+}
+
+.hr {
+  color: darkblue;
+  border: darkblue 1px solid;
 }

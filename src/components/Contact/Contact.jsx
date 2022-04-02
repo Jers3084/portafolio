@@ -1,54 +1,87 @@
-import React, { useEffect, useState } from 'react'
-import styles from './Contact.module.css';
+import React, { useState } from 'react'
+import styles from './Contact.module.css'
 
 export const Contact = () => {
-  const [mensdcontacto, setMensdcontacto] = useState([])
-  const [correo, setCorreo] = useState('')
-  const [telefono, setTelefono] = useState('')
+  const [nombre, setNombre] = useState('')
+  const [email, setEmail] = useState('')
   const [comentario, setComentario] = useState('')
 
+
+  const handleSubmitr = async (e) => {
+    e.preventDefault()
+
+    await enviarRegistro()
+    setNombre('')
+    setEmail('')
+    setComentario('')
+    alert('Registro Enviado')
+  }
+
+  const enviarRegistro = async () => {
+    try {
+      return fetch('http://35.192.83.171:9000/api/usuarios', {
+        method: 'POST',
+        body: JSON.stringify({ nombre, email,  comentario }), // data {object}
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      })
+        .then((response) => response.json())
+        .then((response) => {
+          console.log(response)
+        })
+    } catch (e) {
+      console.log('hubo un error')
+      console.log(e)
+    }
+  }
+
   return (
-    <div>
-      <form className={styles.formcontacto} >
-        <h1 className={styles.titulo_contacto}>Contacto</h1>
-        <div className={styles.contenedor_contacto}>
-          <div className={styles.mb3}>
-            <label htmlFor="Correo" className={styles.formlabel}>
-              Email address
-            </label>
-            <input
-              type="email"
-              className={styles.formcontrol}
-              id="Correo"
-              placeholder="name@example.com"
-              required
-              onChange={(e) => {
-                setCorreo(e.target.value)
-              }}
-            />
-          </div>
-          <div className={styles.mb3}>
-            <label htmlFor="Telefono" className={styles.formlabel}>
-              Telefono
-            </label>
-            <input
-              type="tel"
-              className={styles.formcontrol}
-              id="Telefono"
-              placeholder="Ingrese su numero telefonico"
-              minLength={10}
-              maxLength={10}
-              required
-              onChange={(e) => {
-                setTelefono(e.target.value)
-              }}
-            />
-          </div>
-          <div className={styles.mb3}>
-            <label htmlFor="Comentario" className={styles.formlabel}>
-              Comentarios
-            </label>
-            <textarea
+    <div className={styles.contenedor}>
+      <h2 className={styles.titulo}>Contacto</h2>
+      <form className={styles.formato} onSubmit={handleSubmitr}>
+        <div className={styles.fullentry}>
+          <label htmlFor="validationCustom01" className={styles.formlabel}>
+            Nombre
+          </label>
+          <input
+            type="text"
+            className={styles.formcontrol}
+            id="inputNombre"
+            value={nombre}
+            placeholder="Nombre"
+            onChange={(e) => {
+              setNombre(e.target.value)
+            }}
+          />
+        </div>
+
+        <div className={styles.fullentry}>
+          <label htmlFor="validationCustom02" className={styles.formlabel}>
+            E-mail
+          </label>
+          <input
+            type="email"
+            className={styles.formcontrol}
+            id="inputEmail"
+            value={email}
+            placeholder="Correo electronico"
+            required
+            onChange={(e) => {
+              setEmail(e.target.value)
+            }}
+          />
+        </div>
+
+        
+        <div className={styles.fullentry}>
+          <label
+            htmlFor="validationCustomUsername"
+            className={styles.formlabel}
+          >
+            Mensaje
+          </label>
+          <textarea
               className={styles.formcontrol}
               id="Comentario"
               rows={3}
@@ -58,17 +91,17 @@ export const Contact = () => {
                 setComentario(e.target.value)
               }}
             />
-          </div>
         </div>
-        <div className={styles.contenedor_boton}>
-          <button type="submit" className={styles.boton}>
+
+        <div className={styles.contenBoton}>
+          <button className={styles.boton} type="submit">
             Enviar
           </button>
         </div>
       </form>
-      <footer className={styles.footer}>
-        <p>Correo de contacto: jers@infinitummail.com</p>
-      </footer>
+      <div className={styles.pie_de_pagina}>
+      <hr className={styles.hr}/>
+      </div>
     </div>
   )
 }

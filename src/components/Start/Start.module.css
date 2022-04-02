@@ -4,6 +4,30 @@ padding: 0;
 box-sizing: border-box;
 }
 
+.contenedor {
+  text-align: center;
+  color: darkblue;
+}
+
 .titulo {
-  margin: 60px;
+  padding-top: 80px;
+  padding-bottom: 10px;
+
+}
+
+.fotostart {
+  border: blue 1px solid;
+  border-radius: 10px;
+}
+
+.parrafo_uno {
+padding: 3px;
+}
+
+.parrafo_dos {
+width:90%;
+padding: 10px;
+text-align: justify;
+margin-left: auto;
+margin-right: auto;
 }
