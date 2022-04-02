@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styles from './Contact.module.css'
 
+
 export const Contact = () => {
   const [nombre, setNombre] = useState('')
   const [email, setEmail] = useState('')
@@ -10,30 +11,23 @@ export const Contact = () => {
   const handleSubmitr = async (e) => {
     e.preventDefault()
 
-    await enviarRegistro()
+    enviarRegistro()
     setNombre('')
     setEmail('')
     setComentario('')
     alert('Registro Enviado')
   }
 
-  const enviarRegistro = async () => {
-    try {
-      return fetch('http://35.192.83.171:9000/api/usuarios', {
-        method: 'POST',
-        body: JSON.stringify({ nombre, email,  comentario }), // data {object}
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      })
-        .then((response) => response.json())
-        .then((response) => {
-          console.log(response)
-        })
-    } catch (e) {
-      console.log('hubo un error')
-      console.log(e)
+  const enviarRegistro = () => {
+    
+    const msg = {
+      to: 'jers1968@gmail.com', // Change to your recipient
+      from: 'jers@infinitummail.com', // Change to your verified sender
+      subject: 'Solicitud de Informacion',
+      text: 'Requiero informacion de los servicios de Vida Natura',
+      html: 'Requiero informacion de los servicios de Vida Natura, Mi correo es: ',
     }
+    
   }
 
   return (
@@ -78,14 +72,12 @@ export const Contact = () => {
           <label
             htmlFor="validationCustomUsername"
             className={styles.formlabel}
-          >
-            Mensaje
-          </label>
+          >Mensaje</label>
           <textarea
               className={styles.formcontrol}
               id="Comentario"
               rows={3}
-              defaultValue={''}
+              Value={comentario}
               required
               onChange={(e) => {
                 setComentario(e.target.value)
