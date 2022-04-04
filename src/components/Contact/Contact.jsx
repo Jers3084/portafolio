@@ -10,22 +10,36 @@ export const Contact = () => {
 
   const handleSubmitr = async (e) => {
     e.preventDefault();
+    console.log(comentario);
+    enviaremail();
 
-    enviarRegistro();
     setNombre("");
     setEmail("");
     setComentario("");
     alert("Registro Enviado");
   };
 
-  const enviarRegistro = () => {
-    const msg = {
-      to: email,
-      from: "jers@infinitummail.com",
-      subject: "Mensaje de pagina Portafolio",
-      text: comentario,
-      html: comentario,
-    };
+  const enviaremail = async () => {
+    try {
+      const msg = {
+        email: email,
+        comentario: comentario,
+      };
+
+      fetch("http://35.192.83.171:5000/api/sendmail", {
+        method: "post",
+        mode: 'cors',
+        body: JSON.stringify(msg), // data {object}
+        headers: { "Content-Type": "application/json" },
+      })
+        .then((response) => response.json())
+        .then((response) => {
+          console.log(response);
+        });
+    } catch (e) {
+      console.log("hubo un error");
+      console.log(e);
+    }
   };
 
   return (
@@ -71,10 +85,10 @@ export const Contact = () => {
             className={styles.formlabel}>
             Mensaje
           </label>
-          <textarea
+          <input
+            type="text"
             className={styles.formcontrol}
             id="Comentario"
-            rows={3}
             Value={comentario}
             required
             onChange={(e) => {
