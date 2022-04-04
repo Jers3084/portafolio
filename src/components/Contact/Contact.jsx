@@ -11,7 +11,7 @@ export const Contact = () => {
   const handleSubmitr = async (e) => {
     e.preventDefault();
     console.log(comentario);
-    enviaremail();
+    await enviaremail();
 
     setNombre("");
     setEmail("");
@@ -26,9 +26,8 @@ export const Contact = () => {
         comentario: comentario,
       };
 
-      fetch("http://35.192.83.171:5000/api/sendmail", {
+      await fetch("http://35.192.83.171:5000/api/sendmail", {
         method: "post",
-        mode: 'cors',
         body: JSON.stringify(msg), // data {object}
         headers: { "Content-Type": "application/json" },
       })
@@ -90,6 +89,7 @@ export const Contact = () => {
             className={styles.formcontrol}
             id="Comentario"
             Value={comentario}
+            placeholder="Mensaje"
             required
             onChange={(e) => {
               setComentario(e.target.value);
