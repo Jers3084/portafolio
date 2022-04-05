@@ -5,7 +5,6 @@ import proyectos from "./Projects.json";
 export const Project = () => {
   return (
     <div>
-      <h1>Project</h1>
       <div className={styles.contenido}>
         {proyectos.map((x, index) => {
           return (
