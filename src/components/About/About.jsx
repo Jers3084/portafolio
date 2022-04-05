@@ -1,13 +1,13 @@
-import React from 'react'
-import styles from './About.module.css'
-import foto from './img/foto.jpg'
+import React from "react";
+import styles from "./About.module.css";
+import foto from "./img/foto.jpg";
 
 export const About = () => {
   return (
     <div className={styles.contenedor}>
       <div className={styles.contenedor_uno}>
         <div className={styles.fotografia}>
-          <img src={foto} alt="" className={styles.img}/>
+          <img src={foto} alt="" className={styles.img} />
         </div>
         <div className={styles.parrafo_uno}>
           <p className={styles.subparrafo1}>
@@ -49,24 +49,32 @@ export const About = () => {
         </ul>
       </div>
       <div className={styles.contenedor_tres}>
+        <p className={styles.titulo}>Conocimientos y experiencia</p>
         <p className={styles.titulo4}>
-          Conocimientos y experiencia en Lenguajes, Frameworks, Librerías,
-          Herramientas de Desarrollo, Plataformas Cloud, SO y Metodologías,
-          como:
+          Lenguajes de programacion y Herramientas de estilos
         </p>
-        <p className={styles.parrafo3}>
-          HTML, CSS, JAVASCRIPT, NODE JS, EXPRESS, REACT JS, BOOTSTRAP, GITHUB,
-          VISUAL STUDIO CODE, GOOGLE CLOUD, HEROKU, VERCEL,WINDOWS, LINUX.
-          SCRUM, KANBAN.
-        </p>
+        <p className={styles.parrafo3}>JAVASCRIPT, HTML, CSS, BOOTSTRAP.</p>
+        <p className={styles.titulo4}>Frameworks y Librerias</p>
+        <p className={styles.parrafo3}>NODE JS, EXPRESS, REACT JS.</p>
+        <p className={styles.titulo4}>Herramientas de Desarrollo</p>
+        <p className={styles.parrafo3}>VISUAL STUDIO CODE, GITHUB.</p>
+        <p className={styles.titulo4}>Cloud y Despliegues.</p>
+        <p className={styles.parrafo3}>GOOGLE CLOUD, HEROKU, VERCEL.</p>
+        <p className={styles.titulo4}>Sistemas Operativos</p>
+        <p className={styles.parrafo3}>WINDOWS, LINUX.</p>
+        <p className={styles.titulo4}>Metodologias de desarrollo</p>
+        <p className={styles.parrafo3}>SCRUM, KANBAN.</p>
         <p className={styles.titulo5}>Bases de Datos</p>
         <p className={styles.parrafo3}>MONGO DB, FIRE BASE, ROBO 3T</p>
         <p className={styles.titulo5}>Experiencia:</p>
         <ul className={styles.ul_dos}>
           <li className={styles.item_lista2}>
-            Elaboración de Paginas Web dinámicas y responsivas.
-           (Html, Css, JavaScript, React)</li>
-          <li className={styles.item_lista2}>Sistemas CRUD. (Arrays, LocalStorage )</li>
+            Elaboración de Paginas Web dinámicas y responsivas. (Html, Css,
+            JavaScript, React)
+          </li>
+          <li className={styles.item_lista2}>
+            Sistemas CRUD. (Arrays, LocalStorage )
+          </li>
           <li className={styles.item_lista2}>Tienda en línea (e-commerce).</li>
           <li className={styles.item_lista2}>Sistemas Frontend y Backend.</li>
           <li className={styles.item_lista2}>
@@ -76,44 +84,53 @@ export const About = () => {
         </ul>
       </div>
       <div className={styles.contenedor_cuatro}>
-        <div className={styles.columna_uno}>
-          <p className={styles.titulo5}>Aptitudes</p>
-          <hr className={styles.hr}/>
-          <ul className={styles.ul_dos}>
-            <li className={styles.item_lista2}>Honestidad</li>
-            <li className={styles.item_lista2}>Lealtad</li>
-            <li className={styles.item_lista2}>Proactividad</li>
-            <li className={styles.item_lista2}>Disponibilidad</li>
-            <li className={styles.item_lista2}>Proactividad</li>
-            <li className={styles.item_lista2}>Liderazgo</li>
-            <li className={styles.item_lista2}>Autodidacta</li>
-            <li className={styles.item_lista2}>Creativo</li>
-            <li className={styles.item_lista2}>Analítico</li>
-            <li className={styles.item_lista2}>Sociable</li>
-            <li className={styles.item_lista2}>Adaptabilidad</li>
-          </ul>
-        </div>
-        <div className={styles.columna_media}>
-          <p className={styles.titulo5}>y</p>
-        </div>
-        <div className={styles.columna_dos}>
-          <p className={styles.titulo5}>Habilidades</p>
-          <hr className={styles.hr}/>
-          <ul className={styles.ul_dos}>
-            <li className={styles.item_lista2}>Entendimiento de planes estratégicos</li>
-            <li className={styles.item_lista2}>Trabajo en Equipo</li>
-            <li className={styles.item_lista2}>Toma de decisiones</li>
-            <li className={styles.item_lista2}>Capacidad de Análisis y Síntesis</li>
-            <li className={styles.item_lista2}>Resolución de problemas</li>
-            <li className={styles.item_lista2}>Rápido aprendizaje </li>
-            <li className={styles.item_lista2}>Analítico</li>
-            <li className={styles.item_lista2}> Desarrollo de Proyectos e Ingenierias</li>
-          </ul>
+        <div className={styles.contenedor_grid}>
+          <div className={styles.columna_uno}>
+            <p className={styles.titulo5}>Aptitudes</p>
+            <hr className={styles.hr} />
+            <ul className={styles.ul_dos}>
+              <li className={styles.item_lista2}>Honestidad</li>
+              <li className={styles.item_lista2}>Lealtad</li>
+              <li className={styles.item_lista2}>Proactividad</li>
+              <li className={styles.item_lista2}>Disponibilidad</li>
+              <li className={styles.item_lista2}>Proactividad</li>
+              <li className={styles.item_lista2}>Liderazgo</li>
+              <li className={styles.item_lista2}>Autodidacta</li>
+              <li className={styles.item_lista2}>Creativo</li>
+              <li className={styles.item_lista2}>Analítico</li>
+              <li className={styles.item_lista2}>Sociable</li>
+              <li className={styles.item_lista2}>Adaptabilidad</li>
+            </ul>
+          </div>
+          <div className={styles.columna_media}>
+            <p className={styles.titulo5}>y</p>
+          </div>
+          <div className={styles.columna_dos}>
+            <p className={styles.titulo5}>Habilidades</p>
+            <hr className={styles.hr} />
+            <ul className={styles.ul_dos}>
+              <li className={styles.item_lista2}>
+                Entendimiento de planes estratégicos
+              </li>
+              <li className={styles.item_lista2}>Trabajo en Equipo</li>
+              <li className={styles.item_lista2}>Toma de decisiones</li>
+              <li className={styles.item_lista2}>
+                Capacidad de Análisis y Síntesis
+              </li>
+              <li className={styles.item_lista2}>Resolución de problemas</li>
+              <li className={styles.item_lista2}>Rápido aprendizaje </li>
+              <li className={styles.item_lista2}>Analítico</li>
+              <li className={styles.item_lista2}>
+                {" "}
+                Desarrollo de Proyectos e Ingenierias
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div className={styles.pie_de_pagina}>
-      <hr className={styles.hr}/>
+        <hr className={styles.hr} />
       </div>
     </div>
-  )
-}
+  );
+};

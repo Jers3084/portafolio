@@ -7,23 +7,23 @@ export const Contact = () => {
   const [nombre, setNombre] = useState("");
   const [email, setEmail] = useState("");
   const [comentario, setComentario] = useState("");
+  var mensaje = "";
 
   const handleSubmitr = async (e) => {
     e.preventDefault();
-    console.log(comentario);
+    mensaje = nombre + "<br>" + email + "<br>" + comentario;
     await enviaremail();
 
     setNombre("");
     setEmail("");
     setComentario("");
-    alert("Registro Enviado");
   };
 
   const enviaremail = async () => {
     try {
       const msg = {
-        email: email,
-        comentario: comentario,
+        email: "jers@infinitummail.com",
+        comentario: mensaje,
       };
 
       await fetch("http://35.192.83.171:5000/api/sendmail", {
@@ -34,6 +34,7 @@ export const Contact = () => {
         .then((response) => response.json())
         .then((response) => {
           console.log(response);
+          alert("Email Enviado");
         });
     } catch (e) {
       console.log("hubo un error");
@@ -88,7 +89,7 @@ export const Contact = () => {
             type="text"
             className={styles.formcontrol}
             id="Comentario"
-            Value={comentario}
+            value={comentario}
             placeholder="Mensaje"
             required
             onChange={(e) => {

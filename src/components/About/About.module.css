@@ -6,18 +6,22 @@
 }
 
 .contenedor {
+  width: 100%;
+  height: 256vh;
   background-image: url("./img/fondo.jpg");
   background-repeat: repeat;
 }
+
 .contenedor_uno {
   padding-top: 90px;
   width: 100%;
-  height: 300px;
+  height: 400px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   color: darkblue;
+
 }
 
 .fotografia {
@@ -52,13 +56,13 @@
 }
 
 .contenedor_dos {
-  margin-top: 90px;
   width: 100%;
-  height: 200px;
+  height: 250px;
   padding-top: 20px;
   padding-left: 30px;
   padding-right: 30px;
   color: darkblue;
+
 }
 
 .titulo2 {
@@ -95,16 +99,21 @@
 }
 
 .contenedor_tres {
-  width: 100%;
-  height: 65vh;
-  padding-top: 30px;
   padding-left: 30px;
   padding-right: 30px;
   color: darkblue;
+
 }
 
+.titulo {
+  margin-top: 30px;
+  font-size: 2rem;
+  text-align: left;
+  font-weight: bold;
+  padding-left: 28px;
+}
 .titulo4 {
-  margin-top: 60px;
+  margin-top: 30px;
   font-size: 2rem;
   text-align: left;
   font-weight: bold;
@@ -122,7 +131,16 @@
 
 .contenedor_cuatro {
   width: 100%;
-  height: 350px;
+  height: 470px;
+  color: darkblue;
+  padding-bottom: 25px;
+
+}
+
+.contenedor_grid {
+  width: 100%;
+  height: 470px;
+  margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
   grid-template-rows: repeat(13, 1fr);
@@ -167,11 +185,9 @@
 }
 
 .pie_de_pagina {
-  margin-top: 100px;
   width: 100%;
-  height: 20px;
+  height: 30px;
   color: darkblue;
-  padding-bottom: 25px;
   font-size: small;
 }
 
@@ -180,13 +196,10 @@
   border: darkblue 1px solid;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 850px) {
   .contenedor {
     width: 100%;
-    height: 3355px;
-    background-image: url("./img/fondo.jpg");
-    background-repeat: repeat;
-    background-size: cover;
+    height: 4250px;
   }
   .contenedor_uno {
     padding-top: 90px;
@@ -229,10 +242,7 @@
     margin-top: 400px;
     width: 100%;
     height: 200px;
-    padding-top: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    color: darkblue;
+    padding-top: 10px;
   }
 
   .titulo2 {
@@ -271,11 +281,8 @@
   .contenedor_tres {
     margin-top: 350px;
     width: 100%;
-    height: 65vh;
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-    color: darkblue;
+    height: 170vh;
+
   }
 
   .titulo4 {
@@ -300,26 +307,17 @@
     width: 100%;
     height: 590px;
     display: block;
-    
-    color: darkblue;
     padding-bottom: 25px;
   }
 
-  .columna_uno {
-    margin-top: 50px;
-    text-align: center;
+  .contenedor_grid {
+    width: 100%;
+    height: 470px;
+    margin-top: 30px;
+    display: block;
+    padding-bottom: 25px;
   }
-
-  .columna_dos {
-    margin-top: 50px;
-    text-align: left;
-  }
-
-  .columna_media {
-    grid-column: 3/4;
-    text-align: center;
-  }
-
+  
   .titulo5 {
     margin-top: 20px;
     font-size: 2rem;

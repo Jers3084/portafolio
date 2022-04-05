@@ -7,7 +7,7 @@
 .contenido {
   width: 100%;
   height: 100vh;
-  padding-top: 80px;
+  padding-top: 70px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -43,7 +43,7 @@
   color: cornflowerblue;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 850px) {
   .contenido {
     width: 100%;
     height: 2500px;
@@ -55,7 +55,12 @@
     background-image: url("./img/fondo.jpg");
   }
   .card {
-    width: 100%;
-    height: px;
+    width: 95%;
+    height: 450px;
+  }
+
+  .image_card {
+    width: 20%;
+    border-radius: 3px;
   }
 }
