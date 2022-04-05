@@ -7,7 +7,7 @@
 
 .contenedor {
   width: 100%;
-  height: 256vh;
+  height: 2430px;
   background-image: url("./img/fondo.jpg");
   background-repeat: repeat;
 }
@@ -19,13 +19,14 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content:space-around;
   color: darkblue;
 
 }
 
 .fotografia {
   flex: 30%;
+  padding-left: 120px;
 }
 
 .img {
@@ -112,6 +113,7 @@
   font-weight: bold;
   padding-left: 28px;
 }
+
 .titulo4 {
   margin-top: 30px;
   font-size: 2rem;
@@ -199,16 +201,20 @@
 @media screen and (max-width: 850px) {
   .contenedor {
     width: 100%;
-    height: 4250px;
+    height: 3320px;
   }
   .contenedor_uno {
     padding-top: 90px;
     width: 100%;
-    height: 400px;
+    height: 800px;
+    padding-left: 0px;
+    padding-right: 0px;
+ 
   }
 
   .fotografia {
     flex: 30%;
+    padding-left: 60px;
   }
 
   .img {
@@ -220,6 +226,8 @@
     flex: 70%;
     border-top: darkblue 1px solid;
     border-bottom: darkblue 1px solid;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .titulo1 {
@@ -231,25 +239,30 @@
   }
 
   .subparrafo1 {
-    padding-top: 40px;
-    padding-left: 20px;
-    padding-bottom: 40px;
+    width: 95%;
+    padding: 40px 5px;
+    text-align: justify;
     text-align: left;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   .contenedor_dos {
-    margin-top: 400px;
-    width: 100%;
-    height: 200px;
+    width: 95%;
+    height: 400px;
     padding-top: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+
   }
 
   .titulo2 {
     font-size: 1.5rem;
     text-align: left;
     font-weight: bold;
-    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .parrafo2 {
@@ -263,15 +276,16 @@
     font-size: 1.5rem;
     text-align: left;
     font-weight: bold;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
     padding-bottom: 10px;
   }
 
   .ul_uno {
     text-align: justify;
-    font-size: 1.2rem;
-    padding-left: 50px;
+    font-size: 1.0rem;
+    padding-left: 30px;
+    padding-right: 5px;
   }
 
   .item_lista1 {
@@ -279,33 +293,40 @@
   }
 
   .contenedor_tres {
-    margin-top: 350px;
     width: 100%;
-    height: 170vh;
+    padding-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
 
   }
 
-  .titulo4 {
-    margin-top: 60px;
-    font-size: 2rem;
+  .titulo {
+    margin-top: 0px;
+    font-size: 1.5rem;
     text-align: left;
     font-weight: bold;
-    padding-left: 28px;
+    padding-left: 3px;
+  }
+
+  .titulo4 {
+    font-size: 1.5rem;
+    text-align: left;
+    font-weight: bold;
+    padding-left: 3px;
     padding-bottom: 20px;
   }
 
   .parrafo3 {
-    padding-left: 25px;
-    padding-right: 40px;
-    padding-bottom: 25px;
+    padding-left: 5px;
+    padding-right: 0px;
+    padding-bottom: 20px;
     text-align: justify;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
   }
 
   .contenedor_cuatro {
-    margin-top: 590px;
     width: 100%;
-    height: 590px;
+    height: 830px;
     display: block;
     padding-bottom: 25px;
   }
@@ -329,9 +350,10 @@
   }
 
   .ul_dos {
+    width: 95%;
     text-align: justify;
     font-size: 1.2rem;
-    padding-left: 50px;
+    padding-left: 30px;
   }
 
   .item_lista2 {
@@ -339,8 +361,7 @@
   }
 
   .pie_de_pagina {
-    margin-top: 250px;
     width: 100%;
-    height: 10px;
+    height: 20px;
   }
 }

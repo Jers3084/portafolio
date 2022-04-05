@@ -64,9 +64,9 @@ export const About = () => {
         <p className={styles.parrafo3}>WINDOWS, LINUX.</p>
         <p className={styles.titulo4}>Metodologias de desarrollo</p>
         <p className={styles.parrafo3}>SCRUM, KANBAN.</p>
-        <p className={styles.titulo5}>Bases de Datos</p>
+        <p className={styles.titulo4}>Bases de Datos</p>
         <p className={styles.parrafo3}>MONGO DB, FIRE BASE, ROBO 3T</p>
-        <p className={styles.titulo5}>Experiencia:</p>
+        <p className={styles.titulo4}>Experiencia:</p>
         <ul className={styles.ul_dos}>
           <li className={styles.item_lista2}>
             Elaboración de Paginas Web dinámicas y responsivas. (Html, Css,

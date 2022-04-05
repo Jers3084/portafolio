@@ -44,66 +44,68 @@ export const Contact = () => {
 
   return (
     <div className={styles.contenedor}>
-      <h2 className={styles.titulo}>Contacto</h2>
-      <form className={styles.formato} onSubmit={handleSubmitr}>
-        <div className={styles.fullentry}>
-          <label htmlFor="validationCustom01" className={styles.formlabel}>
-            Nombre
-          </label>
-          <input
-            type="text"
-            className={styles.formcontrol}
-            id="inputNombre"
-            value={nombre}
-            placeholder="Nombre"
-            onChange={(e) => {
-              setNombre(e.target.value);
-            }}
-          />
-        </div>
+      <div className={styles.pagebody}>
+        <h2 className={styles.titulo}>Contacto</h2>
+        <form className={styles.formato} onSubmit={handleSubmitr}>
+          <div className={styles.fullentry}>
+            <label htmlFor="validationCustom01" className={styles.formlabel}>
+              Nombre
+            </label>
+            <input
+              type="text"
+              className={styles.formcontrol}
+              id="inputNombre"
+              value={nombre}
+              placeholder="Nombre"
+              onChange={(e) => {
+                setNombre(e.target.value);
+              }}
+            />
+          </div>
 
-        <div className={styles.fullentry}>
-          <label htmlFor="validationCustom02" className={styles.formlabel}>
-            E-mail
-          </label>
-          <input
-            type="email"
-            className={styles.formcontrol}
-            id="inputEmail"
-            value={email}
-            placeholder="Correo electronico"
-            required
-            onChange={(e) => {
-              setEmail(e.target.value);
-            }}
-          />
-        </div>
+          <div className={styles.fullentry}>
+            <label htmlFor="validationCustom02" className={styles.formlabel}>
+              E-mail
+            </label>
+            <input
+              type="email"
+              className={styles.formcontrol}
+              id="inputEmail"
+              value={email}
+              placeholder="Correo electronico"
+              required
+              onChange={(e) => {
+                setEmail(e.target.value);
+              }}
+            />
+          </div>
 
-        <div className={styles.fullentry}>
-          <label
-            htmlFor="validationCustomUsername"
-            className={styles.formlabel}>
-            Mensaje
-          </label>
-          <input
-            type="text"
-            className={styles.formcontrol}
-            id="Comentario"
-            value={comentario}
-            placeholder="Mensaje"
-            required
-            onChange={(e) => {
-              setComentario(e.target.value);
-            }}
-          />
-        </div>
+          <div className={styles.fullentry}>
+            <label
+              htmlFor="validationCustomUsername"
+              className={styles.formlabel}>
+              Mensaje
+            </label>
+            <input
+              type="text"
+              className={styles.formcontrol}
+              id="Comentario"
+              value={comentario}
+              placeholder="Mensaje"
+              required
+              onChange={(e) => {
+                setComentario(e.target.value);
+              }}
+            />
+          </div>
 
-        <div className={styles.contenBoton}>
-          <button className={styles.boton} type="submit">
-            Enviar
-          </button>
-        </div>
-      </form>
+          <div className={styles.contenBoton}>
+            <button className={styles.boton} type="submit">
+              Enviar
+            </button>
+          </div>
+        </form>
+      </div>
       <div className={styles.pie_de_pagina}>
         <a
           href="https://github.com/Jers3084?tab=repositories"
