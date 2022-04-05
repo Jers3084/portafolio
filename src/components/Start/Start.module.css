@@ -49,8 +49,8 @@
 @media screen and (max-width: 850px) {
   .contenedor {
     width: 100%vw;
-    height: 1000px;
-    padding-top: 80px;
+    height: 850px;
+    padding-top: 90px;
     text-align: center;
     color: darkblue;
     background-image: url("./img/fondo.jpg");
@@ -60,7 +60,7 @@
     width: 100%;
     padding-top: 0px;
     padding-bottom: 20px;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .fotostart {
@@ -76,20 +76,19 @@
   }
 
   .parrafo_uno {
-    width: 100%;
+    width: 98%;
     margin-top: 15px;
     text-align: justify;
-    padding: 10px;
-    font-size: 1.5rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1rem;
   }
 
   .parrafo_dos {
-    width: 95%;
-    padding: 10px 0px;
-    font-size: 1.5rem;
+    width: 98%;
+    padding: 10px 5px;
+    font-size: 1rem;
     text-align: justify;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
