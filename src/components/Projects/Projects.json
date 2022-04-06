@@ -3,30 +3,35 @@
     "nombre": "Sale Landing",
     "imagen": "./img/proy1.png",
     "descripcion": "Landing page for a complementary medicine business",
-    "path": "https://jers3084.github.io/Proyecto-1/"
+    "path": "https://jers3084.github.io/Proyecto-1/",
+    "github": "https://github.com/Jers3084/Proyecto-1"
   },
   {
     "nombre": "CRUD Application",
     "imagen": "./img/CRUD.png",
     "descripcion": "Application with CRUD operations for a dating page",
-    "path": "https://jers3084.github.io/Proyecto-2/"
+    "path": "https://jers3084.github.io/Proyecto-2/",
+    "github": "https://github.com/Jers3084/Proyecto-2"
   },
   {
     "nombre": "Data Dashboard",
     "imagen": "./img/proy3.png",
     "descripcion": "Application that consumes an API and displays the data graphed in a dashboard",
-    "path": "http://localhost:3000"
+    "path": "http://localhost:3000",
+    "github": "https://github.com/Jers3084/Proyecto-3"
   },
   {
     "nombre": "Restaurant App",
     "imagen": "./img/proy4.png",
     "descripcion": "Application of a restaurant with sections of reservation, contact, etc.",
-    "path": "https://proyecto-4-f6jo6dqp0-jers3084.vercel.app"
+    "path": "https://proyecto-4-f6jo6dqp0-jers3084.vercel.app",
+    "github": "https://github.com/Jers3084/Proyecto-4"
   },
   {
     "nombre": "Electronic commerce application",
     "imagen": "./img/proy5.png",
     "descripcion": "eCommerce application, consisting of a product catalog, shopping cart, payment gateway, authentication and user registration",
-    "path": "https://proyecto5-frontend-2y7r3kdfi-jers3084.vercel.app"
+    "path": "https://proyecto5-frontend-2y7r3kdfi-jers3084.vercel.app",
+    "github": "https://github.com/Jers3084/Proyecto5_Frontend"
   }
 ]
