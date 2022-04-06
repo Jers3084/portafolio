@@ -17,8 +17,8 @@
     "nombre": "Data Dashboard",
     "imagen": "./img/proy3.png",
     "descripcion": "Application that consumes an API and displays the data graphed in a dashboard",
-    "path": "http://localhost:3000",
-    "github": "https://github.com/Jers3084/Proyecto-3"
+    "path": "https://jers3084.github.io/proyecto3/",
+    "github": "https://github.com/Jers3084/proyecto3"
   },
   {
     "nombre": "Restaurant App",

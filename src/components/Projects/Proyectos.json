@@ -17,8 +17,8 @@
     "nombre": "Tablero de Datos-Dashboard-",
     "imagen": "./img/proy3.png",
     "descripcion": " Aplicación que consume una API y muestra los datos graficados en un tablero",
-    "path": "http://localhost:3000",
-    "github": "https://github.com/Jers3084/Proyecto-3"
+    "path": "https://jers3084.github.io/proyecto3/",
+    "github": "https://github.com/Jers3084/proyecto3"
   },
   {
     "nombre": "Restaurant App",
