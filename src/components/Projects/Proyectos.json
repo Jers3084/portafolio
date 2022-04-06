@@ -1,0 +1,34 @@
+[
+   {
+     "nombre": "Landing de Venta",
+     "imagen": "./img/proy1.png",
+     "descripcion": "Página landing para un negocio de medicina complementaria",
+     "path": "https://jers3084.github.io/Proyecto-1/"
+   },
+   {
+     "nombre": "Aplicación CRUD",
+     "imagen": "./img/CRUD.png",
+     "descripcion": " Se desarrolló una aplicación con operaciones CRUD para una pagina de citas",
+     "path": "https://jers3084.github.io/Proyecto-2/"
+   },
+   {
+     "nombre": "Tablero de Datos-Dashboard-",
+     "imagen": "./img/proy3.png",
+     "descripcion": " Aplicación que consume una API y muestra los datos graficados en un tablero",
+     "path": "http://localhost:3000"
+   },
+   {
+     "nombre": "Restaurant App",
+     "imagen": "./img/proy4.png",
+     "descripcion": " Aplicación de un restaurante con secciones de reservacion, contacto, etc",
+     "path": "https://proyecto-4-f6jo6dqp0-jers3084.vercel.app"
+   },
+   {
+     "nombre": "Aplicacion de comercio electronico",
+     "imagen": "./img/proy5.png",
+     "descripcion": "Aplicación eCommerce, compuesto por catálogo de productos, carrito de compras, pasarela de pago, autenticación y registro de usuarios",
+     "path": "https://proyecto5-frontend-2y7r3kdfi-jers3084.vercel.app"
+   }
+ ]
+ 
+ 

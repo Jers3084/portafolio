@@ -1,32 +1,32 @@
 [
   {
-    "nombre": "Landing de Venta",
+    "nombre": "Sale Landing",
     "imagen": "./img/proy1.png",
-    "descripcion": "Página landing para un negocio de medicina complementaria",
+    "descripcion": "Landing page for a complementary medicine business",
     "path": "https://jers3084.github.io/Proyecto-1/"
   },
   {
-    "nombre": "Aplicación CRUD",
+    "nombre": "CRUD Application",
     "imagen": "./img/CRUD.png",
-    "descripcion": " Se desarrolló una aplicación con operaciones CRUD para una pagina de citas",
+    "descripcion": "Application with CRUD operations for a dating page",
     "path": "https://jers3084.github.io/Proyecto-2/"
   },
   {
-    "nombre": "Tablero de Datos-Dashboard-",
+    "nombre": "Data Dashboard",
     "imagen": "./img/proy3.png",
-    "descripcion": " Aplicación que consume una API y muestra los datos graficados en un tablero",
+    "descripcion": "Application that consumes an API and displays the data graphed in a dashboard",
     "path": "http://localhost:3000"
   },
   {
     "nombre": "Restaurant App",
     "imagen": "./img/proy4.png",
-    "descripcion": " Aplicación de un restaurante con secciones de reservacion, contacto, etc",
+    "descripcion": "Application of a restaurant with sections of reservation, contact, etc.",
     "path": "https://proyecto-4-f6jo6dqp0-jers3084.vercel.app"
   },
   {
-    "nombre": "Aplicacion de comercio electronico",
+    "nombre": "Electronic commerce application",
     "imagen": "./img/proy5.png",
-    "descripcion": "Aplicación eCommerce, compuesto por catálogo de productos, carrito de compras, pasarela de pago, autenticación y registro de usuarios",
+    "descripcion": "eCommerce application, consisting of a product catalog, shopping cart, payment gateway, authentication and user registration",
     "path": "https://proyecto5-frontend-2y7r3kdfi-jers3084.vercel.app"
   }
 ]
