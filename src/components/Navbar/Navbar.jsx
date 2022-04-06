@@ -6,7 +6,7 @@ import styles from "./Navbar.module.css";
 export const Navbar = (props) => {
   return (
     <>
-      { props.lang==="es-419" ? (
+      { (props.lang==="es-419" || props.lang==="es" || props.lang==="es-ES" ) ? (
       <nav className={styles.navbar}>
         <div className={styles.left}>
           <Link to="/" className="">

@@ -6,7 +6,7 @@ import proyects from "./Projects.json";
 export const Project = (props) => {
   return (
     <>
-      {props.lang === "es-419" ? (
+      {(props.lang==="es-419" || props.lang==="es" || props.lang==="es-ES" ) ? (
         <div className={styles.contenido}>
           {proyectos.map((x, index) => {
             return (

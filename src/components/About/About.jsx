@@ -6,7 +6,7 @@ export const About = (props) => {
   console.log(props.lang);
   return (
     <>
-     {(props.lang==="es-419") ? (
+     {(props.lang==="es-419" || props.lang==="es" || props.lang==="es-ES" ) ? (
     <div className={styles.contenedor}>
       <div className={styles.contenedor_uno}>
         <div className={styles.fotografia}>

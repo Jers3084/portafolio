@@ -44,7 +44,7 @@ export const Contact = (props) => {
 
   return (
     <>
-      { props.lang==="es-419" ? (
+      { (props.lang==="es-419" || props.lang==="es" || props.lang==="es-ES" ) ? (
       <div className={styles.contenedor}>
         <div className={styles.pagebody}>
           <h2 className={styles.titulo}>Contacto</h2>
