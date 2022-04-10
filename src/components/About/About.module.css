@@ -201,7 +201,7 @@
 @media screen and (max-width: 850px) {
   .contenedor {
     width: 100%;
-    height: 3320px;
+    height: 3365px;
   }
   .contenedor_uno {
     padding-top: 90px;
@@ -214,7 +214,7 @@
 
   .fotografia {
     flex: 30%;
-    padding-left: 60px;
+    padding-left: 40px;
   }
 
   .img {
@@ -248,7 +248,7 @@
 
   .contenedor_dos {
     width: 95%;
-    height: 400px;
+    height: 410px;
     padding-top: 10px;
     padding-left: 0px;
     padding-right: 0px;
@@ -294,6 +294,7 @@
 
   .contenedor_tres {
     width: 100%;
+    padding-top: 40px;
     padding-bottom: 20px;
     padding-left: 0;
     padding-right: 0;
