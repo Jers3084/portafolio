@@ -7,7 +7,7 @@
 
 .contenedor {
   width: 100%;
-  height: 2430px;
+  /* height: 100vh; */
   background-image: url("./img/fondo.jpg");
   background-repeat: repeat;
 }
@@ -19,9 +19,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content:space-around;
+  justify-content: space-around;
   color: darkblue;
-
 }
 
 .fotografia {
@@ -63,7 +62,6 @@
   padding-left: 30px;
   padding-right: 30px;
   color: darkblue;
-
 }
 
 .titulo2 {
@@ -103,7 +101,6 @@
   padding-left: 30px;
   padding-right: 30px;
   color: darkblue;
-
 }
 
 .titulo {
@@ -136,7 +133,6 @@
   height: 470px;
   color: darkblue;
   padding-bottom: 25px;
-
 }
 
 .contenedor_grid {
@@ -201,7 +197,7 @@
 @media screen and (max-width: 850px) {
   .contenedor {
     width: 100%;
-    height: 3365px;
+    /* height: 100vh; */
   }
   .contenedor_uno {
     padding-top: 90px;
@@ -209,7 +205,6 @@
     height: 800px;
     padding-left: 0px;
     padding-right: 0px;
- 
   }
 
   .fotografia {
@@ -252,7 +247,6 @@
     padding-top: 10px;
     padding-left: 0px;
     padding-right: 0px;
-
   }
 
   .titulo2 {
@@ -283,7 +277,7 @@
 
   .ul_uno {
     text-align: justify;
-    font-size: 1.0rem;
+    font-size: 1rem;
     padding-left: 30px;
     padding-right: 5px;
   }
@@ -298,7 +292,6 @@
     padding-bottom: 20px;
     padding-left: 0;
     padding-right: 0;
-
   }
 
   .titulo {
@@ -322,7 +315,7 @@
     padding-right: 0px;
     padding-bottom: 20px;
     text-align: justify;
-    font-size: 1.0rem;
+    font-size: 1rem;
   }
 
   .contenedor_cuatro {
@@ -339,7 +332,7 @@
     display: block;
     padding-bottom: 25px;
   }
-  
+
   .titulo5 {
     margin-top: 20px;
     font-size: 2rem;
